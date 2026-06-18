@@ -12,7 +12,7 @@ layout: default
 <section class="section-pad bg-white">
   <div class="container" style="max-width: 800px; margin: 0 auto;">
     
-    {% if page.image %}
+    {% if page.image and page.image != '' %}
     <div style="width: 100%; border-radius: var(--radius); overflow: hidden; margin-bottom: 48px; box-shadow: var(--shadow-md);">
       <img src="{{ page.image }}" alt="{{ page.title }}" style="width: 100%; height: auto; display: block;">
     </div>

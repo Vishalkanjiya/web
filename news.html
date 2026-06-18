@@ -16,8 +16,12 @@ title: News & Updates
     <div class="values-grid">
       {% for post in site.posts %}
       <a href="{{ post.url | relative_url }}" class="val-card" style="text-decoration: none; color: inherit; text-align: left; align-items: flex-start; padding: 0; overflow: hidden;">
-        {% if post.image %}
+        {% if post.image and post.image != '' %}
         <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+        {% else %}
+        <div style="width: 100%; height: 200px; background: linear-gradient(rgba(26, 18, 8, 0.7), rgba(26, 18, 8, 0.7)), url('{{ "/assets/premium_peanuts.png" | relative_url }}') center/cover; display: flex; align-items: center; justify-content: center;">
+          <img src="{{ '/assets/logo.png' | relative_url }}" alt="ATYA GLOBAL" style="max-height: 50px; opacity: 0.8; filter: brightness(0) invert(1);">
+        </div>
         {% endif %}
         <div style="padding: 24px;">
           <span class="label" style="font-size: 0.75rem; margin-bottom: 12px; display: inline-block;">{{ post.date | date: "%B %d, %Y" }}</span>
