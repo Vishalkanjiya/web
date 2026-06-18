@@ -71,24 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealEls.forEach(el => revealObs.observe(el));
 
-  /* --- Contact Form --- */
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent!';
-      btn.style.background = 'var(--espresso)';
-      btn.style.color = '#fff';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Enquiry';
-        btn.style.background = '';
-        btn.style.color = '';
-        btn.disabled = false;
-        form.reset();
-      }, 4000);
-    });
-  }
+  /* --- Contact --- */
 
 });

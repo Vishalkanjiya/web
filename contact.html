@@ -66,6 +66,7 @@ title: Contact Us
           <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@atyaagro.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="New Enquiry from ATYA GLOBAL Website">
+            <input type="hidden" name="_next" value="https://vishalkanjiya.github.io/web/contact.html">
             <div class="form-name-row">
               <div class="f-group">
                 <label for="firstName">First Name</label>
@@ -80,9 +81,15 @@ title: Contact Us
               <label for="company">Company Name</label>
               <input type="text" name="Company" id="company" class="f-control" placeholder="Your Company Ltd." required>
             </div>
-            <div class="f-group">
-              <label for="email">Business Email</label>
-              <input type="email" name="email" id="email" class="f-control" placeholder="john@yourcompany.com" required>
+            <div class="form-name-row">
+              <div class="f-group">
+                <label for="email">Business Email</label>
+                <input type="email" name="Email" id="email" class="f-control" placeholder="john@yourcompany.com" required>
+              </div>
+              <div class="f-group">
+                <label for="phone">Contact Number (with Country Code)</label>
+                <input type="tel" name="Phone" id="phone" class="f-control" placeholder="+91 98765 43210" required>
+              </div>
             </div>
             <div class="f-group">
               <label for="country">Country</label>
