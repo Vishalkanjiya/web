@@ -40,7 +40,7 @@ title: Contact Us
             <div class="c-info-icon"><i class="fas fa-phone"></i></div>
             <div class="c-info-text">
               <h4>Phone / WhatsApp</h4>
-              <p>Available on request</p>
+              <p><a href="https://wa.me/917573971182" style="color: var(--gold-dark);">+91 75739 71182</a></p>
             </div>
           </div>
         </div>
@@ -63,32 +63,34 @@ title: Contact Us
           <h3 style="margin-bottom: 8px;">Send Us an Enquiry</h3>
           <p style="margin-bottom: 28px; font-size: 0.9rem;">Fill in your details and we will get back to you with specifications, pricing, and availability.</p>
 
-          <form class="contact-form" id="contactForm">
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@atyaagro.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Enquiry from ATYA GLOBAL Website">
             <div class="form-name-row">
               <div class="f-group">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" class="f-control" placeholder="John" required>
+                <input type="text" name="First Name" id="firstName" class="f-control" placeholder="John" required>
               </div>
               <div class="f-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" class="f-control" placeholder="Smith" required>
+                <input type="text" name="Last Name" id="lastName" class="f-control" placeholder="Smith" required>
               </div>
             </div>
             <div class="f-group">
               <label for="company">Company Name</label>
-              <input type="text" id="company" class="f-control" placeholder="Your Company Ltd." required>
+              <input type="text" name="Company" id="company" class="f-control" placeholder="Your Company Ltd." required>
             </div>
             <div class="f-group">
               <label for="email">Business Email</label>
-              <input type="email" id="email" class="f-control" placeholder="john@yourcompany.com" required>
+              <input type="email" name="email" id="email" class="f-control" placeholder="john@yourcompany.com" required>
             </div>
             <div class="f-group">
               <label for="country">Country</label>
-              <input type="text" id="country" class="f-control" placeholder="United Kingdom" required>
+              <input type="text" name="Country" id="country" class="f-control" placeholder="United Kingdom" required>
             </div>
             <div class="f-group">
               <label for="product">Product of Interest</label>
-              <select id="product" class="f-control">
+              <select name="Product" id="product" class="f-control">
                 <option value="">Select a product…</option>
                 <option>Bold Peanuts (India)</option>
                 <option>Java Peanuts (India)</option>
@@ -104,7 +106,7 @@ title: Contact Us
             </div>
             <div class="f-group">
               <label for="message">Message / Requirements</label>
-              <textarea id="message" class="f-control" placeholder="Please describe your requirements — quantity, packaging, specifications, target price, and any other details…" required></textarea>
+              <textarea name="Message" id="message" class="f-control" placeholder="Please describe your requirements — quantity, packaging, specifications, target price, and any other details…" required></textarea>
             </div>
             <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center; padding: 16px;">
               <i class="fas fa-paper-plane"></i> Send Enquiry
