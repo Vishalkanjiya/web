@@ -1254,6 +1254,10 @@ textarea.f-control { min-height: 130px; resize: vertical; }
 
   /* --- Hero --- */
   .hero { min-height: 100svh; }
+  .hero-bg, .page-hero, .export-network { 
+    background-attachment: scroll !important; 
+    background-position: center top !important;
+  }
 
   .hero-body { padding: 0 20px; }
 
