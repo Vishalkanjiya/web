@@ -6,13 +6,6 @@ layout: default
   <div class="container text-center" style="max-width: 800px;">
     <span class="label" style="color: var(--gold-light);">{{ page.date | date: "%B %d, %Y" }}</span>
     <h1 style="margin-bottom: 24px;">{{ page.title }}</h1>
-    {% if page.tags %}
-    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-      {% for tag in page.tags %}
-      <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 20px;">{{ tag }}</span>
-      {% endfor %}
-    </div>
-    {% endif %}
   </div>
 </div>
 
@@ -21,7 +14,7 @@ layout: default
     
     {% if page.image %}
     <div style="width: 100%; border-radius: var(--radius); overflow: hidden; margin-bottom: 48px; box-shadow: var(--shadow-md);">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width: 100%; height: auto; display: block;">
+      <img src="{{ page.image }}" alt="{{ page.title }}" style="width: 100%; height: auto; display: block;">
     </div>
     {% endif %}
 
