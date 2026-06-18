@@ -1,7 +1,7 @@
 ---
 title: 'Gujarat Kharif 2026: Groundnut Sowing Gears Up as Saurashtra Takes Center Stage'
 date: 2026-06-18T17:36
-image: /web/assets/uploads/Peanut-Farming-USA2.jpg
+image: /web/assets/uploads/111.png
 tags:
   - Gujarat finalizes its Kharif 2026 plan, shifting major focus toward Saurashtra for peanut (groundnut) cultivation with a strong emphasis on certified seed distribution. Gujarat groundnut sowing 2026, peanut cultivation Gujarat, Kharif 2026 agriculture news, Saurashtra groundnut farming, groundnut production India. Gujarat State Seeds Corporation, PM Krishi Sinchai Yojana, oilseed market trends 2026, Rajkot Jamnagar peanut crop.
 ---
