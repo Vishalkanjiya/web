@@ -1,12 +1,10 @@
 backend:
   name: github
-  # IMPORTANT: Change this to your actual GitHub username and repository name
-  # Example: atyaglobal/atyaglobal.github.io
-  repo: your-github-username/your-repo-name 
+  repo: Vishalkanjiya/web
   branch: main 
 
 media_folder: "assets/uploads" 
-public_folder: "/assets/uploads" 
+public_folder: "/web/assets/uploads" 
 
 # Enable automated SEO generation
 # Decap/Sveltia CMS will use this configuration to build the frontend
