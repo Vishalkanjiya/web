@@ -11,3 +11,12 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+
+future: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
