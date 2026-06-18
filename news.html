@@ -1,0 +1,40 @@
+---
+layout: default
+title: News & Updates
+---
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <span class="label" style="color: var(--gold-light);">Latest Updates</span>
+  <h1>News & Market Insights</h1>
+  <p>Stay informed with the latest updates from ATYA GLOBAL regarding our peanut crops, export updates, and company news.</p>
+</div>
+
+<!-- Blog Feed -->
+<section class="section-pad bg-white">
+  <div class="container">
+    <div class="values-grid">
+      {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}" class="val-card" style="text-decoration: none; color: inherit; text-align: left; align-items: flex-start; padding: 0; overflow: hidden;">
+        {% if post.image %}
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+        {% endif %}
+        <div style="padding: 24px;">
+          <span class="label" style="font-size: 0.75rem; margin-bottom: 12px; display: inline-block;">{{ post.date | date: "%B %d, %Y" }}</span>
+          <h4 style="margin-bottom: 12px; font-size: 1.25rem;">{{ post.title }}</h4>
+          <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-light);">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          <span style="display: inline-block; margin-top: 16px; color: var(--gold); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Read More &rarr;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    {% if site.posts.size == 0 %}
+    <div style="text-align: center; padding: 60px 0;">
+      <i class="fas fa-newspaper" style="font-size: 3rem; color: var(--border); margin-bottom: 20px;"></i>
+      <h3>No Updates Yet</h3>
+      <p style="color: var(--text-light);">Check back soon for the latest market updates and news from ATYA GLOBAL.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>

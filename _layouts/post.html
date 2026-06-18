@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="page-hero" style="padding-bottom: 60px;">
+  <div class="container text-center" style="max-width: 800px;">
+    <span class="label" style="color: var(--gold-light);">{{ page.date | date: "%B %d, %Y" }}</span>
+    <h1 style="margin-bottom: 24px;">{{ page.title }}</h1>
+    {% if page.tags %}
+    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+      {% for tag in page.tags %}
+      <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 20px;">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<section class="section-pad bg-white">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    
+    {% if page.image %}
+    <div style="width: 100%; border-radius: var(--radius); overflow: hidden; margin-bottom: 48px; box-shadow: var(--shadow-md);">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width: 100%; height: auto; display: block;">
+    </div>
+    {% endif %}
+
+    <div class="post-content" style="font-size: 1.05rem; line-height: 1.8; color: var(--text);">
+      {{ content }}
+    </div>
+
+    <div class="divider divider-left" style="margin-top: 60px; width: 100%;"></div>
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px;">
+      <a href="{{ '/news.html' | relative_url }}" class="btn btn-outline-dark">&larr; Back to News</a>
+      <a href="https://wa.me/917573971182?text=I'm interested in discussing your recent update: {{ page.title }}" target="_blank" rel="noopener" class="btn btn-gold">Discuss on WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* Markdown styling for post content */
+.post-content h1, .post-content h2, .post-content h3 {
+  color: var(--espresso);
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-family: var(--font-h);
+}
+.post-content h2 { font-size: 2rem; }
+.post-content h3 { font-size: 1.5rem; }
+.post-content p { margin-bottom: 24px; }
+.post-content ul, .post-content ol { margin-bottom: 24px; padding-left: 20px; }
+.post-content li { margin-bottom: 10px; }
+.post-content img { max-width: 100%; border-radius: var(--radius); margin: 32px 0; }
+.post-content blockquote {
+  border-left: 4px solid var(--gold);
+  padding: 24px;
+  margin: 32px 0;
+  background: var(--bg-alt);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+</style>

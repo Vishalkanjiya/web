@@ -1,0 +1,24 @@
+backend:
+  name: github
+  # IMPORTANT: Change this to your actual GitHub username and repository name
+  # Example: atyaglobal/atyaglobal.github.io
+  repo: your-github-username/your-repo-name 
+  branch: main 
+
+media_folder: "assets/uploads" 
+public_folder: "/assets/uploads" 
+
+# Enable automated SEO generation
+# Decap/Sveltia CMS will use this configuration to build the frontend
+collections:
+  - name: "posts"
+    label: "News & Updates"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "SEO Keywords / Tags", name: "tags", widget: "list", required: false, hint: "Used by search engines to index this post (e.g., Peanuts, Export, India)"}
+      - {label: "Body", name: "body", widget: "markdown"}

@@ -1,0 +1,12 @@
+title: ATYA GLOBAL
+description: "India's premier peanut export house, connecting the world's finest peanuts from India, Argentina, and Brazil to global buyers with zero-defect quality standards."
+url: "https://atyaagro.com"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="ATYA GLOBAL">
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}>Home</a>
+        <a href="{{ '/about.html' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
+        <a href="{{ '/products.html' | relative_url }}" {% if page.url contains 'products' %}class="active"{% endif %}>Products</a>
+        <a href="{{ '/news.html' | relative_url }}" {% if page.url contains 'news' or page.layout == 'post' %}class="active"{% endif %}>News</a>
+        <a href="{{ '/contact.html' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a>
+      </div>
+      <div class="nav-cta" id="navCta">
+        <a href="{{ '/contact.html' | relative_url }}" class="btn btn-gold">Get a Quote</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="ATYA GLOBAL">
+        <p>India's premier peanut export house, connecting the world's finest peanuts from India, Argentina, and Brazil to global buyers with zero-defect quality standards.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/about.html' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/products.html' | relative_url }}">Products</a></li>
+          <li><a href="{{ '/news.html' | relative_url }}">News & Updates</a></li>
+          <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@atyaagro.com">info@atyaagro.com</a></li>
+          <li><a>Morbi, Rajkot, Gujarat, India</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/company/atya-agro" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/atyaagro" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/atyaagro" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917573971182" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} ATYA GLOBAL. All Rights Reserved.</p>
+      <p>Premium Peanut Exporters &mdash; Morbi, Gujarat, India</p>
+    </div>
+  </footer>
+
+  <script src="{{ '/js/main.js' | relative_url }}"></script>
+</body>
+</html>
