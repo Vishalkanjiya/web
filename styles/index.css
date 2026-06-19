@@ -1181,7 +1181,7 @@ textarea.f-control { min-height: 130px; resize: vertical; }
    Responsive — Tablet (≤ 1024px)
    ========================================= */
 @media (max-width: 1024px) {
-  .split { grid-template-columns: 1fr; gap: 40px; }
+  .split { grid-template-columns: 1fr !important; gap: 40px !important; }
   .split-img { order: -1; }
   .split-img img { height: 380px; }
   .split-img .img-badge { right: 10px; bottom: -14px; width: 84px; height: 84px; font-size: 1.3rem; }
