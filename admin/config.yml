@@ -4,7 +4,7 @@ backend:
   branch: main 
 
 media_folder: "assets/uploads" 
-public_folder: "/web/assets/uploads" 
+public_folder: "/assets/uploads" 
 
 # Enable automated SEO generation
 # Decap/Sveltia CMS will use this configuration to build the frontend
