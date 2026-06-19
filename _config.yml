@@ -6,6 +6,20 @@ baseurl: "/web"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO & Social Metadata
+author: "Vishal Kanjiya"
+twitter:
+  username: atyaagro
+  card: summary_large_image
+social:
+  name: "ATYA GLOBAL"
+  links:
+    - https://www.linkedin.com/company/atya-agro
+    - https://www.facebook.com/atyaagro
+    - https://www.instagram.com/atyaagro
+logo: "/assets/logo.png"
 
 exclude:
   - node_modules

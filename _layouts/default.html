@@ -6,6 +6,29 @@
   {% seo %}
   <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="{{ '/assets/logo.png' | relative_url }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/logo.png' | relative_url }}">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ATYA GLOBAL",
+    "url": "{{ '/' | absolute_url }}",
+    "logo": "{{ '/assets/logo.png' | absolute_url }}",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-75739-71182",
+      "contactType": "sales",
+      "areaServed": "Global"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/atya-agro",
+      "https://www.facebook.com/atyaagro",
+      "https://www.instagram.com/atyaagro"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -37,7 +60,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="{{ '/assets/logo.png' | relative_url }}" alt="ATYA GLOBAL">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="ATYA GLOBAL" loading="lazy">
         <p>India's premier peanut export house, connecting the world's finest peanuts from India, Argentina, and Brazil to global buyers with zero-defect quality standards.</p>
       </div>
       <div class="footer-col">

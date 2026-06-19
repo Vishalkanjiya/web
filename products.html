@@ -257,3 +257,50 @@ title: Products
   </section>
 
 
+  <!-- Product JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "position": 1,
+        "name": "Premium Bold Peanuts",
+        "description": "High quality raw bold peanuts exported from India. Rich in oil content with excellent size consistency.",
+        "category": "Agricultural Products",
+        "brand": { "@type": "Brand", "name": "ATYA GLOBAL" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "Java Peanuts (Small Runner)",
+        "description": "Medium-sized, round kernels with a delicate, mild flavour profile ideal for peanut butter and confectionery.",
+        "category": "Agricultural Products",
+        "brand": { "@type": "Brand", "name": "ATYA GLOBAL" }
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "TJ / Tiger Jumbo Peanuts",
+        "description": "Extra-large premium peanuts prized for their visual appeal and crunch, perfectly suited for gourmet roasting.",
+        "category": "Agricultural Products",
+        "brand": { "@type": "Brand", "name": "ATYA GLOBAL" }
+      },
+      {
+        "@type": "Product",
+        "position": 4,
+        "name": "High-Oleic Runner Peanuts (Argentina)",
+        "description": "Sourced from Cordoba, Argentina. Known for exceptional shelf life and an incredibly sweet, buttery flavor.",
+        "category": "Agricultural Products",
+        "brand": { "@type": "Brand", "name": "ATYA GLOBAL" }
+      }
+    ]
+  }
+  </script>
