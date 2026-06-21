@@ -9,6 +9,7 @@ plugins:
   - jekyll-sitemap
 
 # SEO & Social Metadata
+google_analytics: "G-0H7WR6E72J"
 author: "Vishal Kanjiya"
 twitter:
   username: atyaagro
