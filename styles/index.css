@@ -19,8 +19,8 @@
   --text-mid:    #3D3022;
   --text-soft:   #6B5D4A;
   --gold:        #C8A951;
-  --gold-dark:   #8B6914;
-  --gold-light:  #E8D08A;
+  --gold-dark:   #7A6020;
+  --gold-light:  #E6CD82;
   --border:      #E8E2D6;
   --border-soft: rgba(200,169,81,0.15);
   --radius:      4px;
@@ -537,9 +537,9 @@ p {
   margin-bottom: 14px;
 }
 
-.p-card h4 {
+.p-card h3 {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text);
   line-height: 1.4;
 }

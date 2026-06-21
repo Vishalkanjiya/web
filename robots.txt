@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://vishalkanjiya.github.io/web/sitemap.xml
+Sitemap: https://atyaagro.com/sitemap.xml
