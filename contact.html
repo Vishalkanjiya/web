@@ -63,9 +63,11 @@ title: Contact Us
           <h3 style="margin-bottom: 8px;">Send Us an Enquiry</h3>
           <p style="margin-bottom: 28px; font-size: 0.9rem;">Fill in your details and we will get back to you with specifications, pricing, and availability.</p>
 
-          <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@atyaagro.com" method="POST">
-            <input type="hidden" name="_subject" value="New Enquiry from ATYA GLOBAL Website">
-            <input type="hidden" name="_next" value="https://atyaagro.com/contact.html">
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c640cea9-07a1-4943-b5f7-4628c8adca00">
+            <input type="hidden" name="subject" value="New Enquiry from ATYA GLOBAL Website">
+            <input type="hidden" name="redirect" value="https://atyaagro.com/contact.html">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <div class="form-name-row">
               <div class="f-group">
                 <label for="firstName">First Name</label>
