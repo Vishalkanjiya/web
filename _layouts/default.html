@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; form-action 'self' https://api.web3forms.com;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.tawk.to; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://*.tawk.to; font-src 'self' https://cdnjs.cloudflare.com https://*.tawk.to; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com wss://*.tawk.to https://*.tawk.to; form-action 'self' https://api.web3forms.com; frame-src https://*.tawk.to; child-src https://*.tawk.to;">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   {% seo %}
   <link rel="preload" href="{{ '/styles/index.css' | relative_url }}" as="style">
@@ -111,5 +111,20 @@
   </footer>
 
   <script src="{{ '/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6a9eb929108ee9344fa785b5/1k1u06ivd';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
 </body>
 </html>
